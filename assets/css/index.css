@@ -7,6 +7,9 @@ html, body {
     font-size: 12px;
 }
 
+::-moz-selection { background: yellow;  }
+::selection { background: yellow;  }
+
 .container {
     height: 100%;
     width: 100%;
@@ -28,6 +31,15 @@ html, body {
     padding-top: 25%;
 }
 
+.preview {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    z-index: 2;
+    top: 0;
+}
+
 .tl {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
@@ -45,9 +57,22 @@ html, body {
     grid-row: 3 /span 2;
 }
 
+.bl >.padded {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.br >.padded{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .block {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .padded {
@@ -61,7 +86,7 @@ a {
 }
 
 a:hover {
-    background-color: orange;
+    background-color: #ff9800;
     cursor: crosshair;
 }
 
