@@ -31,10 +31,10 @@ def deploy():
     # rsync_project("/var/www/html/starterkit/site/blueprints/", "site/blueprints/")
     # rsync_project("/var/www/html/starterkit/assets/", "assets/")
     # rsync_project("/var/www/html/starterkit/assets/", "assets/")
-    # with cd("/var/www/html/starterkit"):
-    #     sudo("chown -R root:www-data .")
-    #     sudo("find . -type f | xargs chmod 664")
-    #     sudo("find . -type d | xargs chmod 775")
-    #     sudo("find . -type d | xargs chmod +s")
-    #     sudo("umask 0002")
+    with cd("/var/www/kirby/"):
+        sudo("chown -R ubuntu:www-data .")
+        sudo("find . -type f | xargs chmod 664")
+        sudo("find . -type d | xargs chmod 775")
+        sudo("find . -type d | xargs chmod +s")
+        # sudo("umask 0002")
     # put("site/config/config.php", "/var/www/starterkit/site/config/config.php", use_sudo=True)

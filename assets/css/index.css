@@ -28,7 +28,11 @@ html, body {
 }
 
 .center >h1 {
-    padding-top: 25%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
 }
 
 .preview {
@@ -36,6 +40,7 @@ html, body {
     height: 100%;
     position: absolute;
     background: transparent;
+    background-size: cover;
     z-index: 2;
     top: 0;
 }
@@ -103,14 +108,11 @@ a:hover {
 /* } */
 
 @media (max-width: 720px){
-    html, body {
-        height: auto;
-    }
+    /* html, body { */
+    /*     height: auto; */
+    /* } */
     .padded {
         width: 100%;
-    }
-    .center >h1 {
-        padding-top: 40%;
     }
 }
 
