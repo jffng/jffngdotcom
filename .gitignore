@@ -22,6 +22,7 @@ Icon
 #
 .htaccess
 
+/site/config/config.php
 /site/accounts/*
 !/site/accounts/index.html
 
