@@ -17,7 +17,7 @@ env.user = 'ubuntu'
 def deploy():
     # with cd("/var/www/html/starterkit"):
     #     sudo("chown -R ubuntu:ubuntu .")
-    rsync_project("/var/www/kirby", "./", exclude=[".git", ".gitignore", "deployment.py"])
+    rsync_project("/var/www/kirby", "./", exclude=[".git", ".gitignore", "deployment.py", "/content"])
     # rsync_project("/var/www/kirby")
     # rsync_project("/var/www/kirby/index.php")
     #
