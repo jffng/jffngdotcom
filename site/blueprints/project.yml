@@ -19,3 +19,19 @@ fields:
   text:
     label: Text
     type:  textarea
+
+  responsibilities:
+    label: Responsiblities
+    type:  textarea
+
+  github:
+    label: GitHub
+    type: Url
+    
+  project_site:
+    label: Project Site
+    type: Url
+
+  other:
+    label: Other Site
+    type: Url

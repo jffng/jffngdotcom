@@ -101,11 +101,24 @@ a:hover {
     font-weight: normal;
 }
 
+.media-container >img {
+    width: 100%;
+}
+
+.media-container {
+    margin: 12px auto;
+}
+
 .right {
     text-align: right;
     float: right;
 }
-/* } */
+
+.project {
+    max-width: 640px;
+    padding: 18px;
+    margin: 0 auto;
+}
 
 @media (max-width: 720px){
     /* html, body { */

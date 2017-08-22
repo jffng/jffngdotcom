@@ -59,7 +59,7 @@ $projects = page('projects')->children()->visible();
             <a target="_blank" href="mailto:this.jeffong@gmail.com">Email</a><br>
             <a target="_blank" href="https://github.com/jffng">GitHub</a><br>
             <a target="_blank" href="https://www.linkedin.com/in/ongjeffrey/">LinkedIn</a><br>
-            <a target="_blank" href="https://www.linkedin.com/in/ongjeffrey/">CV</a>
+            <a target="_blank" href="http://jffng.com/content/3-about/0-jeffong/jeff-ong-resume_2017.pdf">CV</a>
           </p>
         </div>
         </p>
