@@ -20,8 +20,12 @@
         <?= $page->text()->kirbytext() ?>
         <h2 class="header">Responsibilities</h2>
         <h2 class="header">Project Links</h2>
-          <a href="<?= $page->project_site()->url() ?>">Project Site</a><br>
-          <a href="<?= $page->github()->url() ?>">GitHub</a><br>
+          <?php if ($page->project_site() != ''): ?>
+            <a href="<?= $page->project_site()->url() ?>">project site</a><br>
+          <?php endif ?> 
+          <?php if ($page->github() != ''): ?>
+            <a href="<?= $page->github()->url() ?>">GitHub</a><br>
+          <?php endif ?> 
 
         <?php
         // Images for the "project" template are sortable. You
