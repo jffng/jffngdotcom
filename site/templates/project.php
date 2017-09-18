@@ -24,13 +24,13 @@
           <ul>
           <?php if ($page->project_site() != ''): ?>
           <li>
-            <a href="<?= $page->project_site()->url() ?>">Project Site</a>
+            <a target="_blank" href="<?= $page->project_site()->url() ?>">Project Site</a>
           </li>
           <?php endif ?> 
 
           <?php if ($page->github() != ''): ?>
           <li>
-            <a href="<?= $page->github()->url() ?>">GitHub</a>
+            <a target="_blank" href="<?= $page->github()->url() ?>">GitHub</a>
           </li>
           <?php endif ?> 
         </ul>

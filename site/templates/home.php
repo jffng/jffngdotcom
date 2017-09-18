@@ -46,7 +46,7 @@ $projects = page('projects')->children()->visible();
               }
             endforeach
             ?>
-            <a target="_blank" class="project-link" data-thumbnail="<?= $thumbnail ?>" href="<?= $project->url() ?>"><?= $project->title() ?></a><br>
+            <a class="project-link" data-thumbnail="<?= $thumbnail ?>" href="<?= $project->url() ?>"><?= $project->title() ?></a><br>
             <?php endforeach ?>
           </p>
         </div>
