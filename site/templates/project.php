@@ -40,9 +40,14 @@
         // Images for the "project" template are sortable. You
         // can change the display by clicking the 'edit' button
         // above the files list in the sidebar.
-        foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+        /* foreach($page->images()->sortBy('sort', 'asc') as $image): ?> */
+        foreach($page->files()->sortBy('sort', 'asc') as $file): ?>
           <figure class="media-container">
-            <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
+            <?php if($file->type() == "image"): ?>
+              <img src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+            <?php elseif($file->type() == "video"): ?>
+              <video src="<?= $file->url() ?>" controls="true" alt="<?= $page->title()->html() ?>" />
+            <?php endif ?>
           </figure>
         <?php endforeach ?>
       </div>

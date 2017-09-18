@@ -101,7 +101,7 @@ a:hover {
     font-weight: normal;
 }
 
-.media-container >img {
+.media-container >img, .media-container >video {
     width: 100%;
 }
 
