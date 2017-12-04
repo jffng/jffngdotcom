@@ -19,10 +19,17 @@
       <div class="text wrap">
         <?= $page->text()->kirbytext() ?>
         <h2 class="header">Responsibilities</h2>
+        <?= $page->responsibilities()->kirbytext() ?>
         <h2 class="header">Project Links</h2>
-          <a href="<?= $page->project_site()->url() ?>">Project Site</a><br>
-          <a href="<?= $page->github()->url() ?>">GitHub</a><br>
-
+          <ul>
+            <li>
+              <a href="<?= $page->project_site()->url() ?>">Project Site</a><br>
+            </li>
+            <li>
+              <a href="<?= $page->github()->url() ?>">GitHub</a><br>
+            </li>
+          </ul>
+        <h2 class="header">Documentation</h2>
         <?php
         // Images for the "project" template are sortable. You
         // can change the display by clicking the 'edit' button
