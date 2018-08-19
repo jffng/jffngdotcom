@@ -26,7 +26,7 @@ $projects = page('projects')->children()->visible();
       <div class="block tl">
         <div class="padded">
           <h2 class="header">About</h2>
-          <p>I'm an American artist | designer | technologist based in Brooklyn, New York.</p>
+          <p>I'm an American artist | designer | programmer based in Brooklyn, New York.</p>
           <p>I graduated from the University of Michigan and the <a target="_blank" href="https://tisch.nyu.edu/itp">Interactive Telecommunications Program</a> at New York University.</p>
           <p>I work at <a target="_blank" href="https://www.frogdesign.com">frog design</a>, advancing the human experience through design and technology.</p>
         </div>

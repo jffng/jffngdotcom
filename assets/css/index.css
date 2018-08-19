@@ -86,12 +86,12 @@ html, body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
 a:hover {
-    background-color: #00C1FF;
+    background-color: yellow;
     cursor: crosshair;
 }
 
